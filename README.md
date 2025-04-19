@@ -1,1 +1,1 @@
-# infleaern-jpa-basic-study
+# [인프런] 김영한님 ORM 표준 JPA 강의를 수강하며 학습한 내용을 기록하는 레파지토리입니다.
