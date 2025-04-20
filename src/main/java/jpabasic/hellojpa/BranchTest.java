@@ -1,4 +1,4 @@
 package jpabasic.hellojpa;
 
-public class BranchTest {
+public class BranchTest g{
 }
