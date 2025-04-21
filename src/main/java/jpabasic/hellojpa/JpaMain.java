@@ -15,15 +15,9 @@ public class JpaMain {
 
         transaction.begin();
         try {
-//            Member findMember = entityManager.find(Member.class, 2L);
-            List<Member> result = entityManager.createQuery("select m from Member as m", Member.class)
-                    .setFirstResult(1)
-                    .setMaxResults(8)
-                    .getResultList();
-
-            for (Member member : result) {
-                System.out.println("member name = " + member.getName());
-            }
+            //비영속 상태 (순수 자바 코드)
+            Member member = entityManager.find(Member.class, 150L);
+            member.setName("Test");
 
             transaction.commit();
         } catch (Exception e) {
