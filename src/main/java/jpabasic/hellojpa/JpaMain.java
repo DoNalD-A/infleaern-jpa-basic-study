@@ -15,9 +15,7 @@ public class JpaMain {
 
         transaction.begin();
         try {
-            //비영속 상태 (순수 자바 코드)
-            Member member = entityManager.find(Member.class, 150L);
-            member.setName("Test");
+
 
             transaction.commit();
         } catch (Exception e) {
