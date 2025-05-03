@@ -14,8 +14,6 @@ public class Order {
     @Column(name = "MEMBER_ID")
     private Long memberId;
 
-    Member member;
-
     private LocalDateTime orderDate;
 
     @Enumerated(EnumType.STRING)
@@ -52,4 +50,5 @@ public class Order {
     public void setStatus(OrderStatus status) {
         this.status = status;
     }
+
 }
